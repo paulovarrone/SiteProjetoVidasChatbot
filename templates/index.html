@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>O QUE É A ONG PROJETO VIDAS?</h1>
+<p>Fundada em 1998, a ONG é formada por estudantes da UV capacitados no ensino de Primeiros Socorros e Atendimento Pré Hospitalar.</p>
+
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col-md-6 imagem-container">
+                <img src="{{ url_for('static', filename='img/maca.png') }}" alt="Atendimento Pré Hospitalar">
+                <p class="image-caption">Simulação de atendimento Pré Hospitalar no PAI (Projeto de Acolhimento ao Ingressante) no curso de medicina na Universidade de Vassouras</p>
+            </div>
+            <div class="col-md-6 missao">
+                <h2>MISSÃO</h2>
+                <p>
+                    A ONG Projeto Vidas, através de seus membros e suas atividades, propõe-se a desenvolver o estudo sobre o ambiente pré-hospitalar de emergência, primeiros socorros e cirurgia do trauma, além de promover ensino, treinamentos e capacitações em APH às pessoas da comunidade de Vassouras (RJ) e região e estudantes das mais amplas modalidades de curso da Universidade de Vassouras, usando como referência bibliográfica importantes nomes da Cirurgia do Trauma e principalmente o protocolo norte americano PHTLS (Pre Hospital Trauma Life Suport) e BLS (Basic Life Suport) adaptado para condições brasileiras.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="objetivos">
+        <h2>OBJETIVOS</h2>
+        <ul>
+            <li>Desenvolvimento técnico dos integrantes da ONG através de aulas internas e exclusivas</li>
+            <li>Desenvolvimento técnico de estudantes da Universidade de Vassouras através de eventos proporcionados pela Extensão e parceria com ligas acadêmicas</li>
+            <li>Ensino de Atendimento Pré Hospitalar e Primeiros Socorros para a comunidade</li>
+            <li>Aumentar a conscientização quanto a importância do conhecimento de tais técnicas em saúde por todos, promovendo segurança para a sociedade</li>
+        </ul>
+    </section>
+    <p>
+        Juntamente com a Coordenadoria de Extensão e assuntos comunitários o Projeto Vidas participa de Feiras de Saúde, onde realiza a simulação de APH (Atendimento Pré Hospitalar), esclarecendo perto da população os procedimentos realizados pelos serviços de resgate. Sempre que solicitado, o Projeto Vidas se dispõe a ministrar Cursos de APH onde se é necessário e solicitado, como empresas públicas e particulares, assim como organizações governamentais e militares, sempre tendo em vista a viabilidade técnica e disponibilidade dos membros.
+    </p>
+</div>
+
+
+{% endblock %}
