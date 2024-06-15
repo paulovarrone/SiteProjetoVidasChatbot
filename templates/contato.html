@@ -1,0 +1,61 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<h1>NOSSO CONTATO E NOSSAS MÍDIAS SOCIAIS</h1>
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col-md-6 imagem-container">
+                <img src="{{ url_for('static', filename='img/diretoria.png') }}" alt="Diretoria ONG Projeto Vidas">
+            </div>
+            <div class="col-md-6 contato">
+                <p>
+                    EM CASO DE DÚVIDAS OU PARCERIAS PODEM SEMPRE ENTRAR EM CONTATO COM OS INTEGRANTES DA DIRETORIA ATUAL DA ONG PROJETO VIDAS ATRAVÉS DO WHATSAPP <img src="{{ url_for('static', filename='img/whatsapp.png') }}" alt="WHATSAPP">
+                </p>
+                <div class="info">
+                    <p>Eduarda Dias -  <a href="https://wa.me/5524999844115" target="_blank">(24) 99984-4115</a>
+                        <br>
+                        Presidente
+                    </p>
+                    <p>Derek Gomes - <a href="https://wa.me/5522998888253" target="_blank">(22) 99888-8253</a>
+                        <br>
+                        Vice Presidente
+                    </p>
+                    <p>Beatriz Kiki - <a href="https://wa.me/5524992768745" target="_blank">(24) 99276-8745</a>
+                        <br>
+                        Secretária Geral
+                    </p>
+                    <p>Paulo Bastos - <a href="https://wa.me/5521969559968" target="_blank">(21) 96955-9968</a>
+                        <br>
+                        Tesoureiro
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont_email">
+                <p>OU ATRAVÉS DO E-MAIL DA ONG PROJETO VIDAS:</p>
+                <p><a href="mailto:projetovidas.ong@gmail.com">projetovidas.ong@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="cont_insta">
+                <p>
+                    ALÉM DISSO TAMBÉM É POSSÍVEL NOS CONTATAR ATRAVÉS DO INSTAGRAM DA NOSSA ONG, ONDE POSTAMOS SEMPRE NOSSOS EVENTOS E ENCONTROS, ALÉM DE ESTARMOS SEMPRE DISPONÍVEIS PARA COMUNICAÇÃO NO DIRECT
+                </p>
+                <p class="instagramer"><a href="https://www.instagram.com/ongprojetovidas/"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="INSTAGRAM"> @ongprojetovidas</a></p>
+
+                <div class="row insta">
+                    <div class="col-md-6 imagem-container">
+                        <img src="{{ url_for('static', filename='img/inst1.png') }}" alt="Instagram ONG Projeto Vidas">
+                    </div>
+                    <div class="col-md-6 imagem-container">
+                        <img src="{{ url_for('static', filename='img/inst2.png') }}" alt="Instagram ONG Projeto Vidas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
