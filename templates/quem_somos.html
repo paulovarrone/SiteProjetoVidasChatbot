@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>QUEM COMPÕE A ONG PROJETO VIDAS?</h1>
+<div class="container">
+    <section>
+        
+        <div class="row">
+            <div class="col-md-6 imagem-container">
+                <img src="{{ url_for('static', filename='img/bebe.png') }}" alt="Aula de Primeiros Socorros">
+                <p class="image-caption">Integrante da ONG Projeto Vidas ministrando aula de Primeiros Socorros no EMEDIC (Encontro Médico de Iniciação Científica) (imagem 01) e Simulação de transporte de vítima na prancha em curso (imagem 02)</p>
+            </div>
+            <div class="col-md-6 missao">
+                <h2>COMPONENTES</h2>
+                <p>
+                    A ONG Projeto Vidas é composta por estudantes da Universidade de Vassouras, podendo ser integrante da ONG graduandos de quaisquer cursos da Universidade.
+                </p>
+                <p>
+                    Todos os membros são capacitados em Atendimento Pré Hospitalar e Primeiros Socorros e passaram previamente por processo seletivo padrão da própria ONG Projeto Vidas. Sendo testados em amplas modalidades de resgate, Primeiros Socorros e conduta diante do Atendimento Pré Hospitalar (APH), contemplando conhecimento tanto teórico quanto prático.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 imagem-container">
+                <img src="{{ url_for('static', filename='img/imobilizar.png') }}" alt="Simulação de transporte">
+                <p class="image-caption">Integrante da ONG Projeto Vidas ministrando aula de Primeiros Socorros no EMEDIC (Encontro Médico de Iniciação Científica) (imagem 01) e Simulação de transporte de vítima na prancha em curso (imagem 02)</p>
+            </div>
+            <div class="col-md-6 imagem-container">
+                <img src="{{ url_for('static', filename='img/brigada.png') }}" alt="Evento de conscientização">
+                <p class="image-caption">Integrantes da ONG Projeto Vidas em conjunto com outros órgãos de resgate como Corpo de Bombeiros e SAMU, além do auxílio na Empresa K-Infra em evento de Conscientização quanto à importância da precaução ao volante e aos cuidados de resgate de trauma rodoviário/automobilístico</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}
