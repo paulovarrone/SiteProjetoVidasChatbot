@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1><img src="{{ url_for('static', filename='img/vassoura.png') }}" alt="vassourinha"> Bot-Vassourinha, te ajudo com Medicina!</h1>
+<div class="container">
+    
+    <section>
+        <form action="/resposta" method="post">
+            <label for="pergunta">Faça sua pergunta:</label>
+            <input type="text" id="pergunta" name="pergunta" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        {% if resposta %}
+        <div class="resposta">
+            <p><strong>Sua Pergunta:</strong> {{ pergunta }}</p>
+            <p><strong>Resposta:</strong> {{ resposta }}</p>
+        </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}
