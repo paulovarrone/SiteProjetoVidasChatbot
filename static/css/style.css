@@ -152,3 +152,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#resp-chat{
+    color: #6c757d;
+    line-height: 1.6;
+    text-align: justify;
+}
