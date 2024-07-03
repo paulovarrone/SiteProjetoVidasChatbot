@@ -26,6 +26,7 @@ h1, h2 {
 p {
     color: #6c757d;
     line-height: 1.6;
+    text-align: justify;
 }
 
 a {
@@ -153,8 +154,15 @@ footer {
     width: 100%;
 }
 
-#resp-chat{
+#resp-chat, #per-chat{
     color: #6c757d;
     line-height: 1.6;
     text-align: justify;
+    color: #286bb3;
+}
+
+#per{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }

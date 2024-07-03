@@ -13,8 +13,13 @@
 
         {% if resposta %}
         <div class="resposta">
-            <p><strong>Sua Pergunta:</strong> {{ pergunta }}</p>
-            <p id="resp-chat"><strong>Resposta:</strong> {{ resposta }}</p>
+            <div id="per">
+                <p><strong>Sua Pergunta:</strong></p>
+                <p id="per-chat"> {{ pergunta }} </p>
+            </div>
+            
+            <p><strong>Resposta:</strong></p>
+            <p id="resp-chat"> {{ resposta }}</p>
         </div>
         {% endif %}
     </section>
